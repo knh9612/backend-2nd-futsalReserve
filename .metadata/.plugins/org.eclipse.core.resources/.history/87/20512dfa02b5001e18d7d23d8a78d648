@@ -1,0 +1,17 @@
+package futsalManager;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class FutsalField {
+	int futsal_id;
+	int manager_id;
+	int capacity;
+	String futsal_name;
+}

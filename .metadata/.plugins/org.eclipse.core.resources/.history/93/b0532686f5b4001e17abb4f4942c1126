@@ -1,0 +1,47 @@
+package controller;
+
+
+import java.sql.SQLException;
+import java.util.List;
+
+import dao.ManagerDAO;
+import futsalManager.FutsalField;
+import futsalManager.Manager;
+import futsalManager.Reservation;
+
+public class ManagerAct {
+	
+	
+	ManagerDAO managerDAO = new ManagerDAO();
+	
+	public Manager loginAsManager(String id, String pw) {
+		//로그인한 매니저 반환	
+		Manager loginManager = null;
+		try {
+			loginManager = managerDAO.loginAsManagerDAO(id, pw);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return loginManager;
+	}
+	
+	void cancleReservation() {}
+	
+	List<Reservation>checkReservation(){
+		return null;
+	}
+	
+	void deleteFutsalField() {}
+	
+	void updateFutsalField() {
+		
+	}
+	
+	void addFutsalField() {
+
+	}
+	
+	List<FutsalField> showMyFutsalFields(){
+		return null;
+	}
+}

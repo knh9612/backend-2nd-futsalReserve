@@ -1,0 +1,25 @@
+package controller;
+
+public class ManagerAct {
+	private Manager loginAsManager() {
+		
+	}
+	
+	void cancleReservation() {}
+	
+	List<Reservastion>checkReservation(){}
+	
+	void deleteFutsalField() {}
+	
+	void updateFutsalField() {
+		
+	}
+	
+	void addFutsalField() {
+
+	}
+	
+	List<Futsal> showMyFutsalFields(){
+		
+	}
+}

@@ -1,0 +1,16 @@
+import java.util.List;
+
+import controller.ManagerAct;
+import futsalManager.Reservation;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ManagerAct act = new ManagerAct();
+		
+		List<Reservation> reser = act.checkReservation(4);
+		System.out.println(reser.get(0));
+	}
+
+}

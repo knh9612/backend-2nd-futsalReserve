@@ -1,0 +1,20 @@
+import java.util.List;
+
+import controller.ManagerAct;
+import futsalManager.FutsalField;
+import util.DBUtil;
+
+public class Main {
+	public static void main(String[] args) {
+		FutsalField f = new FutsalField(1, 99, "wpqkfkfkd");
+		
+		ManagerAct act = new ManagerAct(DBUtil.getConnection());
+		List<FutsalField> showMyFutsalFields = act.showMyFutsalFields(1);
+		for(FutsalField ff : showMyFutsalFields) {
+			System.out.println(ff);
+		}
+		act.addFutsalField(f);
+		act.showMyFutsalFields(1);
+	}
+	
+}

@@ -1,0 +1,31 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.time.LocalDate;
+
+import futsalManager.DBUtil;
+
+public class ManagerDAO {
+	
+	
+	try(Connection connection = DBUtil.getConnection();
+		Statement statement = connection.createStatement(); 
+		ResultSet resultSet = statement.executeQuery("select * from todo");){
+
+		// resultSet.next() -> 값이 들어오면, true
+		while(resultSet.next()) { // resultSet을 가지고 원하는 값들을 넣어줘서 보냄
+			int id = resultSet.getInt("id");
+			String title = resultSet.getString("title");
+			String description = resultSet.getString("description");
+			
+			// java.sql.Date
+			Date date = resultSet.getDate("due_date");
+			LocalDate dueDate = date.toLocalDate();
+			
+			boolean isCompleted = resultSet.getBoolean("is_completed");
+			
+			todos.add(new Todo(id, title, description, dueDate, isCompleted));
+		}
+	
+}

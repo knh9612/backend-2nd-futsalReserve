@@ -1,0 +1,15 @@
+import java.util.List;
+
+import controller.ManagerAct;
+import futsalManager.FutsalField;
+import futsalManager.Reservation;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ManagerAct act = new ManagerAct();
+		FutsalField f = new FutsalField(1, 1,1, "ㅈ아ㅓ라ㅣㅇㅁ러");
+		act.updateFutsalField(f);
+	}
+
+}

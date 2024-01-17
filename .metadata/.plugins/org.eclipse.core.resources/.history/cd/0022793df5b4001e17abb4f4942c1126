@@ -1,0 +1,37 @@
+package controller;
+
+import java.util.List;
+
+import dao.ManagerDAO;
+import futsalManager.FutsalField;
+import futsalManager.Manager;
+import futsalManager.Reservation;
+
+public class ManagerAct {
+	
+	ManagerDAO managerDAO = new ManagerDAO();
+	
+	Manager loginManager = 
+	
+	Manager loginAsManager(String id, String pw) {
+		
+	}
+	
+	void cancleReservation() {}
+	
+	List<Reservation>checkReservation(){}
+	
+	void deleteFutsalField() {}
+	
+	void updateFutsalField() {
+		
+	}
+	
+	void addFutsalField() {
+
+	}
+	
+	List<FutsalField> showMyFutsalFields(){
+		
+	}
+}

@@ -1,0 +1,11 @@
+import controller.ManagerAct;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ManagerAct act = new ManagerAct();
+		act.loginAsManager("user1", "password1");
+	}
+
+}

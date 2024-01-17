@@ -1,0 +1,38 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import futsalManager.Manager;
+import util.DBUtil;
+
+public class ManagerDAO {
+	
+	public Manager loginAsManager(String id, String pw) {
+		Connection connection = DBUtil.getConnection();
+		PreparedStatement statement = connection.prepareStatement("select * from Manager Where login_id =? && login_pw=?;");
+		statement.setString(1,id);
+		statement.setString(2,pw);
+		ResultSet resultSet = statement.executeQuery();
+		try (connection; statement; resultSet;)
+		{
+			// resultSet.next() -> 값이 들어오면, true
+			while(resultSet.next()) { // resultSet을 가지고 원하는 값들을 넣어줘서 보냄
+				int member_id = resultSet.getInt("manager_id");
+				String login_id = resultSet.getString("login_id");
+				String login_pw = resultSet.getString("login_pw");
+				String phoneNum = resultSet.getString("phoneNum");
+				String name = resultSet.getString("manager_name");
+		
+			}
+		Manager manager = new Manager(member_id, login_id, login_pw, phoneNum, name); 
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			
+		}
+		return new Manager(member_id, login_id, login_pw, phoneNum, name); 
+}
+}

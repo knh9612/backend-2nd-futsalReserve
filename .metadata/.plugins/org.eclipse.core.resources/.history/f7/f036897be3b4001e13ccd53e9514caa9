@@ -1,0 +1,14 @@
+package futsalManager;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Manager {
+	int member_id;
+	String login_id;
+	String login_pw;
+	String phoneNum;
+	String name;
+}

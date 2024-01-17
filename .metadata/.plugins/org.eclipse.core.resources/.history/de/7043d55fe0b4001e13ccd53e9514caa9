@@ -1,0 +1,8 @@
+package futsalManager;
+
+public class FutsalField {
+	int fustal_id;
+	int manager_id;
+	int capacity;
+	String futsal_name;
+}

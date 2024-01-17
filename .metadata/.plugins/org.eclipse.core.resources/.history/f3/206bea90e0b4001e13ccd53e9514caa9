@@ -1,0 +1,31 @@
+package controller;
+
+import java.util.List;
+
+import futsalManager.FutsalField;
+import futsalManager.Manager;
+import futsalManager.Reservation;
+
+public class ManagerAct {
+	private Manager loginAsManager() {
+		
+	}
+	
+	void cancleReservation() {}
+	
+	List<Reservation>checkReservation(){}
+	
+	void deleteFutsalField() {}
+	
+	void updateFutsalField() {
+		
+	}
+	
+	void addFutsalField() {
+
+	}
+	
+	List<FutsalField> showMyFutsalFields(){
+		
+	}
+}

@@ -1,0 +1,9 @@
+import futsalManager.Manager;
+
+public class App {
+
+	public static void main(String[] args) {
+		new Manager().getName();
+	}
+
+}
