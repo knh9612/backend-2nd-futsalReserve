@@ -1,4 +1,4 @@
-package futsalManager;
+package managerModel;
 
 import futsal_maanger_user.User;
 import lombok.AllArgsConstructor;
@@ -19,4 +19,6 @@ public class Manager implements User{
 	String login_pw;
 	String phoneNum;
 	String name;
+	
+
 }

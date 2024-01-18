@@ -1,17 +1,16 @@
-package futsalManager;
+package managerModel;
+
+import java.io.Console;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 
 //@RequiredArgsConstructor
 public class FutsalField {
@@ -26,5 +25,9 @@ public class FutsalField {
 		this.manager_id = manager_id;
 		this.capacity = capacity;
 		this.futsal_name = futsal_name;
+	}
+	
+	public String toString() {
+		return "" +futsal_name + "(id: " + futsal_id + ") 풋살장은 " + capacity + "명 수용 가능합니다.";
 	}
 }

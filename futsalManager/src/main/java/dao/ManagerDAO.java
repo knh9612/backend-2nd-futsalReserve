@@ -8,10 +8,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import futsalManager.FutsalField;
-import futsalManager.Manager;
-import futsalManager.Reservation;
-import util.DBUtil;
+import managerModel.FutsalField;
+import managerModel.Manager;
+import managerModel.Reservation;
 
 public class ManagerDAO {
 	public Connection connection;

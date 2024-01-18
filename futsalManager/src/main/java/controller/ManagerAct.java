@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dao.ManagerDAO;
-import futsalManager.FutsalField;
-import futsalManager.Manager;
-import futsalManager.Reservation;
+import managerModel.FutsalField;
+import managerModel.Manager;
+import managerModel.Reservation;
 
 public class ManagerAct {
 
